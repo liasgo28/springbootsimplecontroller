@@ -4,7 +4,7 @@ Configure and start a simple web application with SpringBoot.
 
 ## Let's start:
 
-Enjoy this.
+Enjoy this!
 
 ### Create a new Maven Project
 
@@ -51,13 +51,7 @@ public class Application {
 
 Run main method and see in console application was been started!
 
- .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- ...
+...
   o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 ...
 
