@@ -62,7 +62,7 @@ Run main method and see in console application was been started!
 * return any string
 * the final code will look like this
 ```
-package br.com.diego.springbootsimplecontroller;
+package br.com.diego.springbootsimplecontroller.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
