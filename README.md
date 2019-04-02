@@ -25,7 +25,7 @@ Open pom.xml file and add the next code after the </project> tag
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-web</artifactId>
-       <version>2.1.3.RELEASE</version>
+		<version>2.1.3.RELEASE</version>
 	</dependency>
 </dependencies>
 ```
