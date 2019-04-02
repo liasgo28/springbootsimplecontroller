@@ -1,6 +1,6 @@
-# SpringBoot Web Application
+# SpringBoot Web - Simple Controller
 
-Configure and start a simple web application with SpringBoot.
+Create a simple Controller with SpringBoot.
 
 ## Let's start:
 
@@ -36,7 +36,7 @@ Open pom.xml file and add the next code after the </project> tag
 * create a new main method and push this SpringApplication.run(Application.class, args);
 * the final code will look like this
 ```
-package br.com.diego.springbootinitial;
+package br.com.diego.springbootsimplecontroller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -54,5 +54,34 @@ Run main method and see in console application was been started!
 ...
   o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 ...
+
+### Create a Simple Controller
+* create new class file 
+* add the annotation @Controller before the class
+* create a new method with String return and before the method put @RequestMapping("/") and @ResponseBody annotations
+* return any string
+* the final code will look like this
+```
+package br.com.diego.springbootsimplecontroller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class SimpleController {
+
+	@RequestMapping("/")
+	@ResponseBody
+	public String hello() {
+		return "Hello I'm a Simple Controller";
+	}
+}
+```
+
+Stop application if it's running
+Run main method and see in console application was been started!
+
+In the browser open http://localhost:8080/ and see the message.
 
 # YWC -> You are Welcome!
