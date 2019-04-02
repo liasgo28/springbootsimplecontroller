@@ -1,0 +1,64 @@
+# SpringBoot Web Application
+
+Configure and start a simple web application with SpringBoot.
+
+## Let's start:
+
+Enjoy this.
+
+### Create a new Maven Project
+
+	* Click: File -> New -> MavenProject
+
+	* Check: Create a simple project(skp archtype selection)
+
+	* Click Next
+
+	* Type Group id, Artifact Id and click Finish
+
+### POM Dependencies
+
+Open pom.xml file and add the next code after the </project> tag
+
+```
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+            <version>2.1.3.RELEASE</version>
+	</dependency>
+</dependencies>
+```
+
+### Create start class
+* create new class file 
+* add the annotation @SpringBootApplication before the class
+* create a new main method and push this SpringApplication.run(Application.class, args);
+* the final code will look like this
+```
+package br.com.diego.springbootinitial;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+}
+```
+
+Run main method and see in console application was been started!
+
+ .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ ...
+  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+...
+
+# YWC -> You are Welcome!
